@@ -1,5 +1,5 @@
 import React from 'react'
-import HomeScreen from "./src/screens/Homescreen";
+import HomeScreen from './src/screens/Homescreen';
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 
