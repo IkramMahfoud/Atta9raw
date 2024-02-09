@@ -1,4 +1,7 @@
 import React from 'react'
+import 'react-native-gesture-handler';
+
+// import files
 import HomeScreen from './src/screens/Homescreen';
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
@@ -6,13 +9,13 @@ import { NavigationContainer } from '@react-navigation/native';
 
 const Stack = createStackNavigator();
 
-const App = () => {
+const App = () =>
+{
   return (
     <NavigationContainer>
-
-    <Stack.Navigator initialRouteName="Home"  >
-    <Stack.Screen name="Home" component={HomeScreen} options={{headerShown: false}} />
-    </Stack.Navigator>
+      <Stack.Navigator initialRouteName="Home"  >
+        <Stack.Screen name="Home" component={HomeScreen} options={{ headerShown: false }} />
+      </Stack.Navigator>
     </NavigationContainer>
   )
 }
